@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu Kaisen 0 - Movie Theater</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .movie-container { 
+            padding: 60px 8%; 
+            color: #ffffff; 
+            font-family: Arial, sans-serif; 
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #ff7200;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .video-player-wrapper {
+            margin: 20px 0 30px 0;
+            width: 100%;
+            max-width: 900px;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 8px;
+            border: 2px solid #ff7200;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 114, 0, 0.2);
+        }
+        .movie-details {
+            max-width: 900px;
+            background: #121214;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #1f1f24;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .movie-info h2 { margin-bottom: 8px; }
+        .movie-info p { color: #aaaaaa; font-size: 14px; }
+        .btn-download {
+            background: #ff7200; 
+            color: #ffffff !important; 
+            padding: 12px 24px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+        .btn-download:hover { background: #cc5a00; }
+    </style>
+</head>
+<body style="background-color: #08080a;">
+    <div class="movie-container">
+        <!-- Back Navigation -->
+        <a href="index.html" class="back-link">← Return to Vault</a>
+        
+        <h1 style="border-left: 5px solid #ff7200; padding-left: 15px;">
+            Jujutsu Kaisen 0 (The Movie)
+        </h1>
+        
+        <!-- 🎬 MOVIE SCREEN IMMERSIVE PLAYER -->
+        <div class="video-player-wrapper">
+            <!-- Replace the src URL with your online movie link or use index.html to test locally -->
+            <iframe src="index.html" style="width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+        </div>
+        <!-- ℹ️ ACTION ROW UNDER THE CINEMA BOX -->
+        <div class="movie-details">
+            <div class="movie-info">
+                <h2>Now Streaming</h2>
+                <p>Prequel Film • 1080p BluRay • Dual-Audio Track</p>
+            </div>
+            <!-- Direct Cloud Server Save Link -->
+            <a href="https://mega.nz" target="_blank" class="btn-download">Download Movie</a>
+        </div>
+    </div>
+</body>
+</html>

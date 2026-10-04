@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bleach - Episodes Vault</title>
+    <!-- Links to your main stylesheet to keep your background and styling unified -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .episode-container { padding: 60px 8%; color: white; font-family: Arial; }
+        .episode-list { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
+        .episode-row {
+            display: flex; justify-content: space-between; align-items: center;
+            background: #121214; padding: 20px; border-radius: 8px; border: 1px solid #1f1f24;
+        }
+        .ep-btn {
+            background: #ff7200; color: white; padding: 8px 15px;
+            text-decoration: none; border-radius: 5px; font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background-color: #08080a;">
+    <div class="episode-container">
+        <h1 style="border-left: 5px solid #ff7200; padding-left: 15px;">Bleach - Choose an Episode</h1>
+       
+        <div class="episode-list">
+            <!-- Episode 1 Row -->
+            <div class="episode-row">
+                <span>🎬 Episode 01 - Ichigo Rise</span>
+                <!-- When users have internet, replace this # with your real Mega or Drive download link -->
+                <a href="#" target="_blank" class="ep-btn">Download 1080p</a>
+            </div>
+            <!-- Episode 2 Row -->
+            <div class="episode-row">
+                <span>🎬 Episode 02 - For Myself</span>
+                <a href="#" target="_blank" class="ep-btn">Download 1080p</a>
+            </div>
+            <!-- Episode 3 Row -->
+            <div class="episode-row">
+                <span>🎬 Episode 03 - Bankai</span>
+                <a href="#" target="_blank" class="ep-btn">Download 1080p</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
